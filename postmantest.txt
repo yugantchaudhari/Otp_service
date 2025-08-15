@@ -1,0 +1,113 @@
+Perfect! If your Spring Boot app is running on **port 8081**, you just need to update all URLs in the Postman requests from `8080` → `8081`.
+
+Here’s the updated list:
+
+---
+
+## **1️⃣ Register (Generate OTP for Registration)**
+
+**Method:** `POST`
+**URL:**
+
+```
+http://localhost:8081/api/register
+```
+
+**Headers:**
+
+```
+Content-Type: application/json
+```
+
+**Body:**
+
+```json
+{
+  "email": "testuser@example.com",
+  "password": "mySecurePass123"
+}
+```
+
+---
+
+## **2️⃣ Verify Registration OTP**
+
+**Method:** `POST`
+**URL:**
+
+```
+http://localhost:8081/api/register/verify
+```
+
+**Headers:**
+
+```
+Content-Type: application/json
+```
+
+**Body:**
+
+```json
+{
+  "email": "testuser@example.com",
+  "otpCode": "123456"
+}
+```
+
+---
+
+## **3️⃣ Login (Generate OTP for Login)**
+
+**Method:** `POST`
+**URL:**
+
+```
+http://localhost:8081/api/login
+```
+
+**Headers:**
+
+```
+Content-Type: application/json
+```
+
+**Body:**
+
+```json
+{
+  "email": "testuser@example.com",
+  "password": "mySecurePass123"
+}
+```
+
+---
+
+## **4️⃣ Verify Login OTP**
+
+**Method:** `POST`
+**URL:**
+
+```
+http://localhost:8081/api/login/verify
+```
+
+**Headers:**
+
+```
+Content-Type: application/json
+```
+
+**Body:**
+
+```json
+{
+  "email": "testuser@example.com",
+  "otpCode": "654321"
+}
+```
+
+---
+
+If you want, I can **create a Postman Collection JSON for port 8081**, ready to import, with all 4 requests pre-filled. That way you can test everything instantly.
+
+Do you want me to do that?
