@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: otp_auth
+  datasource:
+    url: jdbc:mysql://localhost:3306/otp_schema
+    username: root
+    password: admin
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: ictyvc23@gmail.com
+    password: mclpespidsgedkof
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+            required: true
+
+server:
+  port: 8081
